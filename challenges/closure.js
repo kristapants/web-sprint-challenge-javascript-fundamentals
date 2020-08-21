@@ -26,4 +26,16 @@ with its scope. myFunction created, then nested, being within myFunction, kept i
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
- const summation = (value) => value * (value + 1) / 2;
+
+//  const summation = (value) => value * (value + 1) / 2; //is the way this should be done. 
+
+
+function summation(value) {
+  let counter = 0;
+  for(let i = 0; i < value; i++){
+    counter += i + 1;
+  }
+  return counter;
+}
+
+console.log(summation(4));
