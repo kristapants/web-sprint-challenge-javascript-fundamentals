@@ -37,5 +37,3 @@ function summation(value) {
   }
   return counter;
 }
-
-console.log(summation(4));
